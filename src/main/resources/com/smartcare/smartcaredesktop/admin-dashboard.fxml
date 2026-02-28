@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.smartcare.smartcaredesktop.controller.AdminDashboardController"
+            stylesheets="@style.css">
+
+    <!-- SIDEBAR -->
+    <left>
+        <VBox spacing="15" styleClass="sidebar">
+
+            <Label text="SMARTCARE" styleClass="sidebar-title"/>
+
+            <Button text="Dashboard"
+                    onAction="#handleDashboard"
+                    styleClass="sidebar-btn"/>
+
+            <Button text="Doctors"
+                    onAction="#handleDoctors"
+                    styleClass="sidebar-btn"/>
+
+            <Button text="Patients"
+                    styleClass="sidebar-btn"/>
+
+            <Button text="Appointments"
+                    styleClass="sidebar-btn"/>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+            <Button text="Logout"
+                    onAction="#handleLogout"
+                    styleClass="logout-btn"/>
+        </VBox>
+    </left>
+
+    <!-- HEADER -->
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="20" styleClass="header">
+            <Label text="Admin Panel"
+                   style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+        </HBox>
+    </top>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <StackPane fx:id="contentArea"
+                   style="-fx-padding:30;">
+
+            <!-- Default Dashboard Content -->
+            <VBox spacing="20">
+
+                <Label text="Dashboard Overview"
+                       style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+
+                <HBox spacing="20">
+
+                    <VBox styleClass="dashboard-card">
+                        <Label text="Doctors"/>
+                        <Label fx:id="doctorsCountLabel"
+                               text="0"
+                               style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+                    </VBox>
+
+                    <VBox styleClass="dashboard-card">
+                        <Label text="Patients"/>
+                        <Label fx:id="patientsCountLabel"
+                               text="0"
+                               style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+                    </VBox>
+
+                    <VBox styleClass="dashboard-card">
+                        <Label text="Appointments"/>
+                        <Label fx:id="appointmentsCountLabel"
+                               text="0"
+                               style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+                    </VBox>
+
+                </HBox>
+
+            </VBox>
+
+        </StackPane>
+    </center>
+
+</BorderPane>

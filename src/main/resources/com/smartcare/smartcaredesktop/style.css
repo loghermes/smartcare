@@ -1,0 +1,116 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+/* BACKGROUND */
+.background {
+    -fx-background-color: linear-gradient(to bottom right, #dbeafe, #bfdbfe);
+}
+
+/* LOGIN CARD */
+.login-card {
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-padding: 40;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 30, 0, 0, 10);
+}
+
+/* BRAND */
+.brand-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563eb;
+}
+
+/* INPUTS */
+.input-field {
+    -fx-background-radius: 15;
+    -fx-padding: 12;
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 15;
+}
+
+/* ROLE BUTTONS */
+.role-btn {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 20;
+    -fx-padding: 6 18;
+    -fx-cursor: hand;
+}
+
+.role-btn:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+}
+
+.login-btn:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+/* FORGOT */
+.forgot-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+/* SIDEBAR */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #1e3c72, #2a5298);
+    -fx-padding: 25;
+    -fx-pref-width: 220;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 8;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+
+.logout-btn:hover {
+    -fx-background-color: #b91c1c;
+}
+
+/* HEADER */
+.header {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 3);
+}
+
+/* DASHBOARD CARDS */
+.dashboard-card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 15, 0, 0, 5);
+    -fx-min-width: 150;
+}

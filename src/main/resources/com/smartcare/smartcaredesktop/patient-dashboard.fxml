@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" spacing="20"
+      xmlns:fx="http://javafx.com/fxml"
+      style="-fx-background-color: #f8fafc;">
+
+    <Label text="Patient Dashboard"
+           style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+
+</VBox>

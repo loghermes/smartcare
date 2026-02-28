@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.smartcare.smartcaredesktop.controller.LoginController"
+           stylesheets="@style.css">
+
+    <children>
+
+        <!-- Background -->
+        <AnchorPane prefWidth="900" prefHeight="600" styleClass="background"/>
+
+        <!-- Center Card -->
+        <VBox alignment="CENTER"
+              spacing="20"
+              maxWidth="400"
+              styleClass="login-card">
+
+            <Label text="SMARTCARE"
+                   styleClass="brand-title"/>
+
+            <HBox spacing="10" alignment="CENTER">
+                <ToggleButton text="Médecin" styleClass="role-btn"/>
+                <ToggleButton text="Patient" styleClass="role-btn"/>
+                <ToggleButton text="Admin" styleClass="role-btn"/>
+            </HBox>
+
+            <TextField fx:id="emailField"
+                       promptText="Adresse email"
+                       styleClass="input-field"/>
+
+            <PasswordField fx:id="passwordField"
+                           promptText="Mot de passe"
+                           styleClass="input-field"/>
+
+            <Button text="Connexion"
+                    onAction="#handleLogin"
+                    styleClass="login-btn"
+                    maxWidth="Infinity"/>
+
+            <Label text="Mot de passe oublié ?"
+                   styleClass="forgot-text"/>
+
+        </VBox>
+
+    </children>
+</StackPane>
