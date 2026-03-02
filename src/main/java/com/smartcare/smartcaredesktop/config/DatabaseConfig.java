@@ -8,7 +8,7 @@ public class DatabaseConfig {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/smartcare";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "94124764a";
+    private static final String PASSWORD = "";
 
     private static Connection connection;
 
